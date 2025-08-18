@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import SearchForm from "./SearchForm";
+import NavItems from "./NavItems";
 
 const NavBar = () => {
   return (
@@ -12,6 +13,10 @@ const NavBar = () => {
 
         <div className="max-lg:hidden">
           <SearchForm />
+        </div>
+
+        <div className="max-md:hidden">
+          <NavItems />
         </div>
       </div>
     </nav>
