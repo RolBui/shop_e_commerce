@@ -1,10 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import { FaCartShopping } from "react-icons/fa6";
+import { cn } from "@/lib/utils";
 
-const NavItems = () => {
+interface Props {
+  mobile?: boolean;
+}
+
+const NavItems = ({ mobile }: Props) => {
   return (
-    <div className="flex items-center justify-center gap-6">
+    <div
+      className={cn(
+        "flex items-center justify-center gap-6",
+        mobile ? "flex-col" : "flex-row"
+      )}
+    >
       <div className="w-[50px] h-[50px] rounded-full overflow-hidden border-2 border-black shadow-md">
         {/* Profile picture container */}
       </div>
@@ -12,7 +22,9 @@ const NavItems = () => {
       <Link
         href="/profile"
         className="text-lg font-medium text-gray-900 hover:text-gray-700 transition"
-      ></Link>
+      >
+        Nhan
+      </Link>
 
       <button className="nav-btn">LogOut</button>
       <button className="nav-btn">LogIn</button>
