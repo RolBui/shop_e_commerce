@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/componments/navbar/NavBar";
+import Footer from "@/componments/footer/Footer";
 
 const ubuntu = Ubuntu({
   weight: ["400", "500", "700"],
@@ -23,6 +24,7 @@ export default function RootLayout({
         <main className="w-full">
           <NavBar></NavBar>
           {children}
+          <Footer />
         </main>
       </body>
     </html>

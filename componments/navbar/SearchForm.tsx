@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "next/form";
-import { Search } from "lucide-react";
+import { FaSearch } from "react-icons/fa";
 const SearchForm = () => {
   return (
     <Form action="/" scroll={false} className="search-form">
@@ -11,7 +11,7 @@ const SearchForm = () => {
       />
 
       <button className="size-[30px] rounded-full bg-black flex justify-center items-center cursor-pointer text-white">
-        <Search className="size-4" />
+        <FaSearch className="size-4" />
       </button>
     </Form>
   );

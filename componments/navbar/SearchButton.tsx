@@ -1,5 +1,6 @@
-import { Search, X } from "lucide-react";
 import React from "react";
+import { FaSearch } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 interface Props {
   handleSearch: () => void;
@@ -13,9 +14,9 @@ const SearchButton = ({ handleSearch, showSearchForm }: Props) => {
       className="size-[30px] rounded-full bg-black flex justify-center items-center cursor-pointer text-white"
     >
       {showSearchForm ? (
-        <X className="size-4" />
+        <FaTimes className="size-4" />
       ) : (
-        <Search className="size-4" />
+        <FaSearch className="size-4" />
       )}
     </button>
   );
