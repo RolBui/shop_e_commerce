@@ -1,9 +1,12 @@
 import CartItem from "@/componments/cart/CartItem";
+import CartSummary from "@/componments/cart/CartSummary";
 import React from "react";
 
 const CartItemPage = () => {
   {
-    /*const cartitems_count = 3;*/
+    {
+      /*const cartitems_count = 3;*/
+    }
   }
 
   return (
@@ -23,7 +26,7 @@ const CartItemPage = () => {
         </div>
         {/* Cartitem */}
 
-        {/*<CartSummary />*/}
+        <CartSummary />
       </div>
     </div>
   );
